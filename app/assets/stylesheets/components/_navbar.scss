@@ -1,3 +1,15 @@
+// Navabar and title
+.navbar {
+  background-color: #494949;
+}
+
+.nav-link {
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: #c7f0b9;
+}
+
 // Define the mixins for quicker dev (to use mixins : @include + name of the mixin)
 @mixin transition($in) {
     transition:$in;
