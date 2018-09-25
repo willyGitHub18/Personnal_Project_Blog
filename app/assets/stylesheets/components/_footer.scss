@@ -1,3 +1,19 @@
+footer {
+   height: 150px;
+   width: 100%;
+   padding-bottom: 20px;
+   display: flex;
+   margin: 0 auto;
+   background-color: #494949 ;
+   color: #c7f0b9;
+   align-items: flex-end;
+   justify-content: space-around;
+   font-size: 13px;
+   bottom: 0px;
+   position: relative;
+   margin-top: auto;
+   font-family: 'Fira Sans Condensed', sans-serif;
+}
 
 /* Let's style the wrapper in such away that,
 it should always be at the center of the browser */
