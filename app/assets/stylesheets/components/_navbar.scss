@@ -1,5 +1,4 @@
-$red:#F44336;
-
+// Define the mixins for quicker dev (to use mixins : @include + name of the mixin)
 @mixin transition($in) {
     transition:$in;
     -webkit-transition:$in;
@@ -7,6 +6,7 @@ $red:#F44336;
     -o-transition:$in;
     -ms-transition:$in;
 }
+
 @mixin animation($in) {
     animation:$in;
     -webkit-animation:$in;
@@ -14,6 +14,7 @@ $red:#F44336;
     -o-animation:$in;
     -ms-animation:$in;
 }
+
 @mixin box-shadow($in) {
     box-shadow:$in;
     -webkit-box-shadow:$in;
@@ -21,6 +22,7 @@ $red:#F44336;
     -o-box-shadow:$in;
     -ms-box-shadow:$in;
 }
+
 @mixin transform($in) {
     transform:$in;
     -webkit-transform:$in;
@@ -29,24 +31,14 @@ $red:#F44336;
     -ms-transform:$in;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Lato);
-
-body {
-    margin:0;
-    padding:0;
-    background-color:#222;
-}
-* {
-    color:#888;
-  font-family:"Lato",Helvetica,sans-serif;
-}
-
-.bar {
+// Styling of the blob navigation element
+// Bars inside the clicking blob
+.blob-bar {
   display:block;
   width:40px;
   height:5px;
   margin:5px auto;
-  background-color:#fff;
+  background-color:#f5f5f5;
   border-radius:2px;
 
   @include transition(all 0.4s linear 0.1s);
@@ -56,10 +48,11 @@ body {
   }
 }
 
-.wrap {
+// Container for the blobs
+.blob-wrap {
     position:absolute;
     top:20px;
-    left:20px;
+    right:20px;
     margin:auto;
     width:150px;
     height:100px;
@@ -76,7 +69,7 @@ body {
         height:80px;
         border-radius:50%;
         z-index:10;
-        background-color:$red;
+        background-color:#f04d4d;
 
         @include box-shadow(0 0 10px 1px rgba(0,0,0,0.3));
 
@@ -84,7 +77,7 @@ body {
             z-index:30;
             font-size:60px;
             text-align:center;
-            color:#fff;
+            color:#f5f5f5;
 
             @include transition(transform 0.5s ease-in-out 0.2s);
         }
@@ -98,7 +91,7 @@ body {
             @include transition(all 0.5s ease-in-out);
 
             &:hover {
-                color:$red;
+                color:#f04d4d;
                 @include animation(harlem 0.5s linear forwards);
             }
         }
@@ -106,44 +99,46 @@ body {
     &>#checking:checked~.blob:nth-child(2) {
         margin-left:85px;
         margin-top:10px;
-        background-color:#fff;
+        background-color:#f5f5f5;
     }
     &>#checking:checked~.blob:nth-child(3) {
         margin-top:145px;
         margin-left:65px;
-        background-color:#fff;
+        background-color:#f5f5f5;
     }
     &>#checking:checked~.blob:nth-child(4) {
         margin-top:160px;
         margin-left:10px;
-        background-color:#fff;
+        background-color:#f5f5f5;
     }
     &>#checking:checked~.blob:nth-child(5) {
         margin-top:85px;
         margin-left:10px;
-        background-color:#fff;
+        background-color:#f5f5f5;
     }
     &>#checking:checked~.blob:nth-child(6) {
         margin-top:63px;
         margin-left:63px;
-        background-color:#fff;
+        background-color:#f5f5f5;
     }
     &>#checking:checked~.blob:nth-child(7) {
         margin-top:65px;
         margin-left:145px;
-        background-color:#fff;
+        background-color:#f5f5f5;
     }
     &>#checking:checked~.blob:nth-child(8) {
         margin-top:112px;
         margin-left:112px;
-        background-color:#fff;
+        background-color:#f5f5f5;
     }
     &>#checking:checked~.blob:nth-child(9) {
         margin-top:10px;
         margin-left:160px;
-        background-color:#fff;
+        background-color:#f5f5f5;
     }
-    &>#checking:checked~.blob[for="checking"]>.bar {
+
+    // Putting the bars into a cross (3 bars, 2 needed for the cross)
+    &>#checking:checked~.blob[for="checking"]>.blob-bar {
     &:nth-child(1) {
       @include transform(rotate(45deg));
       margin-top:37px;
