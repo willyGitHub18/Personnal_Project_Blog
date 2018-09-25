@@ -98,8 +98,8 @@
         }
     }
     &>#checking:checked~.blob:nth-child(2) {
-        margin-right:85px;
         margin-top:10px;
+        margin-right:85px;
         background-color:#f5f5f5;
     }
     &>#checking:checked~.blob:nth-child(3) {
@@ -135,6 +135,30 @@
     &>#checking:checked~.blob:nth-child(9) {
         margin-top:10px;
         margin-right:160px;
+        background-color:#f5f5f5;
+    }
+
+    &>#checking:checked~.blob:nth-child(10) {
+        margin-top:65px;
+        margin-right:220px;
+        background-color:#f5f5f5;
+    }
+
+    &>#checking:checked~.blob:nth-child(11) {
+        margin-top:120px;
+        margin-right:190px;
+        background-color:#f5f5f5;
+    }
+
+    &>#checking:checked~.blob:nth-child(12) {
+        margin-top:168px;
+        margin-right:150px;
+        background-color:#f5f5f5;
+    }
+
+    &>#checking:checked~.blob:nth-child(13) {
+        margin-top:205px;
+        margin-right:100px;
         background-color:#f5f5f5;
     }
 
