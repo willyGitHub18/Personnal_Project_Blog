@@ -1,4 +1,4 @@
-<%= simple_form_for @post do |f| %>
+<%= form_with model: @post do |f| %>
     <%= f.collection_select(:category_id, Category.all, :id, :name, {prompt: "Choisir une catégorie" } ) %><br />
     <%= f.label "Titre" %><br />
     <%= f.text_field :title, placeholder: "Saisir le titre de l'article" %><br />
