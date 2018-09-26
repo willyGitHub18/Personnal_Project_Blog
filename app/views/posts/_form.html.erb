@@ -1,0 +1,8 @@
+<%= simple_form_for @post do |f| %>
+    <%= f.collection_select(:category_id, Category.all, :id, :name, {prompt: "Choisir une catégorie" } ) %><br />
+    <%= f.label "Titre" %><br />
+    <%= f.text_field :title, placeholder: "Saisir le titre de l'article" %><br />
+    <%= f.label "Contenu" %><br />
+    <%= f.text_area :content, size: "60x12", placeholder: "Contenu de l'article" %><br />
+    <%= f.submit class: "btn btn-primary" %>
+<% end %>
