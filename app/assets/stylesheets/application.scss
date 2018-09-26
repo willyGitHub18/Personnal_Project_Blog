@@ -20,6 +20,9 @@
 @import "components/navbar";
 @import "components/footer";
 
+// Custom css for posts
+@import "posts/form";
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f5f5f5;

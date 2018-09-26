@@ -1,3 +1,26 @@
-<h1>Nouvel Article</h1>
-<%= render 'form' %>
-<%= link_to "Retour", root_path %>
+<!-- Main wrapper -->
+<div class="wrapper">
+
+    <!-- Navbar -->
+    <%= render 'shared/navbar' %>
+
+    <!-- Form container -->
+    <div class="container">
+        <div class="form-container">
+            <div class="title-container">
+                <h2>Nouvel Article</h2>
+            </div>
+            <div>
+                <%= render 'form' %>
+            </div>
+            <div class="actions">
+                <%= link_to "Retour", root_path %>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- End of wrapper -->
+
+<!-- Footer -->
+<%= render 'shared/footer' %>
