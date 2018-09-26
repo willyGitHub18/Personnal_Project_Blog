@@ -1,0 +1,4 @@
+<%= @post.title %>
+<%= @post.content %>
+<%= link_to "Modifier", edit_post_path(@post) %>
+<%= link_to "Supprimer", @post, method: :delete, data: { confirm: "Are you sure?" } %>
