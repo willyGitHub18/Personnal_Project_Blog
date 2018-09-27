@@ -1,5 +1,5 @@
 $(function () {
-    /* 
+    /*
      Custom js file for assan
      */
 //preloader
