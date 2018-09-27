@@ -10,6 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require js/plugins/plugins
+//= require js/assan.custom
+//= require cubeportfolio/js/jquery.cubeportfolio.min
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets

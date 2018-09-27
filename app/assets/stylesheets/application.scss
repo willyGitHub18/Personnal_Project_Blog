@@ -14,6 +14,12 @@
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+@import "font-awesome";
+
+// Assan CSS
+@import "css/plugins/plugins";
+@import "css/style";
+@import "cubeportfolio/css/cubeportfolio.min";
 
 // Custom css for global elements and fonts
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed+Lato');
