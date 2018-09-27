@@ -22,23 +22,9 @@
 @import "cubeportfolio/css/cubeportfolio.min";
 
 // Custom css for global elements and fonts
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed+Lato');
+// @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed+Lato');
 // @import "components/navbar";
 // @import "components/footer";
 
 // Custom css for posts
-@import "posts/form";
-
-#myButton {
-  font-size: 40px;
-  color: white;
-  background-color: transparent;
-  background-repeat:no-repeat;
-  border: none;
-  cursor:pointer;
-  overflow: hidden;
-  outline:none;
-  position: fixed;
-  top: 90%;
-  left: 95%;
-}
+// @import "posts/form";
