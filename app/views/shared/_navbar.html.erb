@@ -26,39 +26,48 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <main class='container'>
-                        <div class='blob-wrap'>
-                            <input type='checkbox' id='checking' style='display:none;' />
-                            <%= image_tag 'nz.svg', class: "blob" %>
-                            <%= image_tag 'camb.svg', class: "blob" %>
-                            <%= image_tag 'phi.svg', class: "blob" %>
-                            <%= image_tag 'us.svg', class: "blob" %>
-                            <%= image_tag 'jp.svg', class: "blob" %>
-                            <%= image_tag 'laos.svg', class: "blob" %>
-                            <%= image_tag 'viet.svg', class: "blob" %>
-                            <%= image_tag 'thai.svg', class: "blob" %>
-                            <%= image_tag 'pe.svg', class: "blob" %>
-                            <%= image_tag 'bo.svg', class: "blob" %>
-                            <%= image_tag 'arg.svg', class: "blob" %>
-                            <%= image_tag 'chile.svg', class: "blob" %>
-                            <label class='blob' for='checking'>
-                                <span class='blob-bar'></span>
-                                <span class='blob-bar'></span>
-                                <span class='blob-bar'></span>
-                            </label>
-                        </div>
-                    </main>
-
-                    <svg>
-                        <defs>
-                            <filter id="filt">
-                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="filt" />
-                                <feBlend in2="filt" in="SourceGraphic" result="mix" />
-                            </filter>
-                        </defs>
-                    </svg>
+                    <a class="nav-link  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Pays</a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li class=" dropdown-submenu dropdown">
+                            <a tabindex="-1" href="#" class="dropdown-item">Amérique du Nord</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="footer-1.html" class="dropdown-item">États-Unis</a></li>
+                            </ul>
+                        </li>
+                        <li class=" dropdown-submenu dropdown">
+                            <a tabindex="-1" href="#" class="dropdown-item">Amérique du Sud</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="footer-1.html" class="dropdown-item">Argentine</a></li>
+                                <li><a href="footer-1.html" class="dropdown-item">Bolivie</a></li>
+                                <li><a href="footer-1.html" class="dropdown-item">Chili</a></li>
+                                <li><a href="footer-1.html" class="dropdown-item">Pérou</a></li>
+                            </ul>
+                        </li>
+                        <li class=" dropdown-submenu dropdown">
+                            <a tabindex="-1" href="#" class="dropdown-item">Asie de l'Est</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="hero-particle.html" class="dropdown-item">Japon</a></li>
+                            </ul>
+                        </li>
+                        <li class=" dropdown-submenu dropdown">
+                            <a tabindex="-1" href="#" class="dropdown-item">Asie du Sud-Est</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="footer-1.html" class="dropdown-item">Thaïlande</a></li>
+                                <li><a href="footer-2.html" class="dropdown-item">Laos</a></li>
+                                <li><a href="footer-3.html" class="dropdown-item">Vietnam</a></li>
+                                <li><a href="footer-4.html" class="dropdown-item">Cambodge</a></li>
+                                <li><a href="footer-5.html" class="dropdown-item">Philippines</a></li>
+                            </ul>
+                        </li>
+                        <li class=" dropdown-submenu dropdown">
+                            <a tabindex="-1" href="#" class="dropdown-item">Océanie</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="header-light-top-bar.html" class="dropdown-item">Nouvelle-Zélande</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
+                <li class="nav-item nav-button"><a href="#" class="btn btn-rounded btn-primary nav-item">Learn More</a></li>
             </ul>
         </div>
         <!-- Right nav icons -->
