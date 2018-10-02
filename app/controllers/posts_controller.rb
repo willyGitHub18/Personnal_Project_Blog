@@ -5,7 +5,15 @@ class PostsController < ApplicationController
       @posts = Post.all
     end
 
-    def index_thailand
+    def index_th
+      @posts = Post.all
+    end
+
+    def index_la
+      @posts = Post.all
+    end
+
+    def index_vi
       @posts = Post.all
     end
 
