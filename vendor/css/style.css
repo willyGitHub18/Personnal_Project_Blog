@@ -733,11 +733,11 @@ Buttons
     box-shadow: none; }
 
 .btn-primary {
-  background: #4782d3;
-  color: #fff; }
+  background: #A8C3DC;
+  color: #FEFEFE; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background: #4782d3;
-    color: #fff; }
+    background: #4395B8;
+    color: #FEFEFE; }
 
 .btn-circle {
   width: 80px;
