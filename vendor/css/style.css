@@ -34,7 +34,7 @@ html, body, html.footer-sticky, .footer-sticky body {
 
 body {
   color: #777;
-  background-color: #f5f5f5;
+  background-color: #FEFEFE;
   font-weight: 400;
   letter-spacing: 0em;
   font-family: "Open Sans", sans-serif;
@@ -892,9 +892,9 @@ si-border {
   border: 0px; }
 
 .si-dark {
-  background-color: #333;
+  background-color: #dded8f;
   border: 0px !important;
-  color: #fff !important; }
+  color: #1F2B27 !important; }
 
 /**icons hover colored**/
 .si-colored-facebook, .si-facebook:hover {
@@ -3577,7 +3577,7 @@ Footer styles
 .footer-bottomAlt {
   padding: 15px 0;
   padding-top: 20px;
-  background-color: #000; }
+  background-color: #141012; }
   .footer-bottomAlt span {
     display: block;
     text-align: right; }

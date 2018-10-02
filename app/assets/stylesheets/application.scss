@@ -21,8 +21,9 @@
 @import "cubeportfolio/css/cubeportfolio.min";
 @import "css/style";
 
-// Custom css for global elements and fonts
+// Custom css for components and fonts
 // @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed+Lato');
+@import "components/half_image";
 
 // Custom css for posts
 @import "posts/form";
