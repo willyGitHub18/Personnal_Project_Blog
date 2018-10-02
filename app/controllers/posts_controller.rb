@@ -1,7 +1,11 @@
 class PostsController < ApplicationController
     before_action :find_post, only: [:show, :edit, :update, :destroy]
 
-    def index
+    def index_nz
+      @posts = Post.all
+    end
+
+    def index_thailand
       @posts = Post.all
     end
 
