@@ -1230,7 +1230,7 @@ Assan Header Style
       .navbar.navbar-transparent .navbar-right-elements .list-inline > li > a:hover {
         color: white; }
     .navbar.navbar-transparent.nav-sticky.nav-stick-top .active .nav-link, .navbar.navbar-transparent.nav-sticky.nav-stick-top .nav-item.show .nav-link {
-      color: #4782d3 !important; }
+      color: #2e4245 !important; }
   /**header sticky**/
   .navbar.navbar-transparent.nav-sticky .navbar-brand .logo {
     position: absolute;
@@ -2844,7 +2844,7 @@ Tabs style
 
 .tabs-circle-icon a.nav-link {
   display: block;
-  color: #444; }
+  color: #2e4245; }
   .tabs-circle-icon a.nav-link > i {
     display: block;
     border-radius: 50%;
