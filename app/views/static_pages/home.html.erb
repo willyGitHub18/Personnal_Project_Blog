@@ -36,29 +36,10 @@
     <%= render 'shared/banner' %>
     <!-- /banner -->
 
-    <div class="half-image-content bg-dark">
-        <div class="content-img bg-parallax pos-right hidden-md-down" data-jarallax='{"speed": 0.2}' style="background:url('assets/img-half1.jpg') no-repeat;">
-        </div>
-        <%= image_tag "img-half1.jpg", class: "visible-lg-down hidden-lg-up img-fluid", alt: "" %>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5  pt70 pb70">
-                    <h2 class="mb40 text-white">
-                        Limitless possiblities create incredible layouts
-                    </h2>
-                    <div class="clearfix text-white-gray">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p><br>
-                        <a href="#" class="btn btn-white">View Features</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!--half image section-->
+    <!-- Half image section -->
+    <%= render 'shared/half_image' %>
+    <!--half image section-->
+    
     <div class="container pt90  pb60">
         <div class="row align-items-center">
             <div class="col-lg-6 mb30">
@@ -88,6 +69,6 @@
     <!-- Footer bottom -->
     <%= render 'shared/footer_bottom' %>
     <!--/footer bottom-->
-    
+
     <!--back to top-->
     <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="ti-angle-up"></i></a>
