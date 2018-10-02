@@ -618,6 +618,17 @@ Buttons
       width: 100%;
       background-color: #fff; }
 
+.btn-blue-outline {
+  border: 2px solid #A8C3DC;
+  background-color: transparent;
+  color: #A8C3DC; }
+  .btn-blue-outline:hover, .btn-blue-outline:focus {
+    color: #ad044a;
+    border-color: #A8C3DC; }
+    .btn-blue-outline:hover:before, .btn-blue-outline:focus:before {
+      width: 100%;
+      background-color: #A8C3DC; }
+
 .btn-outline-primary {
   border: 2px solid #4782d3;
   background-color: transparent;
@@ -892,9 +903,9 @@ si-border {
   border: 0px; }
 
 .si-dark {
-  background-color: #dded8f;
+  background-color: #62022a;
   border: 0px !important;
-  color: #1F2B27 !important; }
+  color: #A8C3DC !important; }
 
 /**icons hover colored**/
 .si-colored-facebook, .si-facebook:hover {
@@ -3556,10 +3567,10 @@ Footer styles
     color: #999; }
 
 .footer-standard {
-  background-color: #222;
+  background-color: #20201E;
   font-size: 14px; }
   .footer-standard h3 {
-    color: #fff;
+    color: #A8C3DC;
     margin-bottom: 30px;
     text-transform: uppercase;
     font-size: 1rem; }
