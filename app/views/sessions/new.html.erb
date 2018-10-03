@@ -1,0 +1,49 @@
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="preloader-inner"></div>
+    </div>
+    <!--/preloader-->
+
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- Navbar -->
+    <%= render 'shared/navbar' %>
+    <!-- /navbar -->
+
+    <div class="bg-parallax parallax-overlay accounts-page"  data-jarallax='{"speed": 0.2}' style='background-image: url("images/bg6.jpg")'>
+        <div class="container">
+            <div class="row pb30">
+                <div class="col-lg-4 col-md-6 mr-auto ml-auto col-sm-8">
+                    <h3 class="text-white text-center mb30">Connecte-toi</h3>
+                    <%= form_for(:session, url: login_path) do |f| %>
+                        <div class="form-group">
+                            <%= f.email.fiel :email, class: "form-control", placeholder: "Email" %>
+                        </div>
+                        <div class="form-group">
+                            <%= f.password_field :password, class: "form-control", placeholder: "Mot de passe" %>
+                        </div>
+                          <div class="form-group">
+                              <%= f.submit "Log In", class: "btn btn-rounded btn-primary btn-block" %>
+                        </div>
+                        <div class="text-center"><a href="#" class="btn btn-link btn-block">Des soucis de connexion?</a></div>
+                        <hr>
+                        <div>
+                            <%= link_to "Sign Up", signup_path, class: "btn btn-white-outline btn-block" %>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <%= render 'shared/footer' %>
+    <!--/footer-->
+
+    <!-- Footer bottom -->
+    <%= render 'shared/footer_bottom' %>
+    <!--/footer bottom-->
+
+    <!--back to top-->
+    <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="ti-angle-up"></i></a>
