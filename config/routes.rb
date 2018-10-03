@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/new'
   root 'static_pages#home'
 
   get 'posts/new-zealand', to: 'posts#index_nz', as: "new_zealand"
