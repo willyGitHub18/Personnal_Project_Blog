@@ -7,3 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Category.create([{ name: "New-Zealand" }, { name: "Thailand" }, { name: "Laos" }, { name: "Vietnam" }, { name: "Cambodia" }, { name: "Philippines" }, { name: "Japan" }, { name: "USA" }, { name: "Peru" }, { name: "Bolivia" }, { name: "Argentina" }, { name: "Chile" }])
+
+# Make the first (and only) user an admin
+User.create!(name:  ENV['USERNAME'],
+             email: ENV['EMAIL'],
+             password:              ENV['MOT_DE_PASSE'],
+             password_confirmation: ENV['MOT_DE_PASSE'],
+             admin: true)
