@@ -17,14 +17,25 @@
         </a>
         <div  id="navbarNavDropdown" class="navbar-collapse collapse">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown active">
-                    <a class="nav-link  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Admin</a>
-                    <ul class="dropdown-menu dropdown-menu-right">
-                        <li><a href="index.html" class="dropdown-item">Gestion du blog</a></li>
-                        <li><a href="index-02.html" class="dropdown-item">Gestion des articles</a></li>
-                        <li><%= link_to "Écrire un article", new_post_path, class: "dropdown-item" %></li>
-                    </ul>
-                </li>
+                <% if logged_in? %>
+                    <% if current_user.admin? && !current_user?(@user) %>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Admin</a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="index.html" class="dropdown-item">Gestion du blog</a></li>
+                            <li><a href="index-02.html" class="dropdown-item">Gestion des articles</a></li>
+                            <li><%= link_to "Écrire un article", new_post_path, class: "dropdown-item" %></li>
+                        </ul>
+                    </li>
+                    <% end %>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Profile</a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="index.html" class="dropdown-item">Mon compte</a></li>
+                            <li><%= link_to "Déconnexion", logout_path, class: "dropdown-item", method: :delete %></li>
+                        </ul>
+                    </li>
+                <% end %>
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Pays</a>
                     <ul class="dropdown-menu dropdown-menu-right">
