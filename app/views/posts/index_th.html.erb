@@ -1,15 +1,17 @@
+    <%# Preloader %>
     <div id="preloader">
         <div id="preloader-inner"></div>
-    </div><!--/preloader-->
+    </div>
+  <%#/preloader%>
 
-    <!-- Site Overlay -->
+    <%# Site Overlay %>
     <div class="site-overlay"></div>
 
-    <!-- Navbar -->
+    <%# Navbar %>
     <%= render 'shared/navbar' %>
-    <!-- /navbar -->
+    <%# /navbar %>
 
-    <!-- Page title -->
+    <%# Page title %>
     <div class="page-titles-img title-space-lg bg-parallax parallax-overlay mb70" data-jarallax='{"speed": 0.2}' style='background-image: url(<%= asset_path 'landscape.jpg' %>)'>
         <div class="container">
             <div class="row">
@@ -19,7 +21,7 @@
             </div>
         </div>
     </div>
-    <!--page title end-->
+    <%#page title end%>
 
     <div class="container mb30">
         <div class="row">
@@ -32,7 +34,7 @@
                                 <div class="post-overlay">
                                     <span>In Photography</span>
                                 </div>
-                            </a><!--thumb-->
+                            </a><%#thumb%>
                             <div class="post-content text-center">
                                 <h2 class="post-title"><%= link_to post.title, post_path(post.id) %></h2>
                                 <ul class="post-meta list-inline">
@@ -51,7 +53,7 @@
                         </article>
                     <% end %>
                 <% end %>
-                <!--article-->
+                <%#article%>
 
                 <nav aria-label="Page navigation example" class="mb70">
                     <ul class="pagination pagination justify-content-end">
@@ -66,13 +68,13 @@
         </div>
     </div>
 
-    <!-- Footer -->
+    <%# Footer %>
     <%= render 'shared/footer' %>
-    <!-- /footer -->
+    <%# /footer %>
 
-    <!-- Footer bottom -->
+    <%# Footer bottom %>
     <%= render 'shared/footer_bottom' %>
-    <!-- /footer bottom -->
+    <%# /footer bottom %>
 
-    <!--back to top-->
+    <%#back to top%>
     <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="ti-angle-up"></i></a>

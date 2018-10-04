@@ -1,17 +1,17 @@
-    <!-- Preloader -->
+    <%# Preloader %>
     <div id="preloader">
         <div id="preloader-inner"></div>
     </div>
-    <!--/preloader-->
+    <%# /preloader%>
 
-    <!-- Site Overlay -->
+    <%# Site Overlay %>
     <div class="site-overlay"></div>
 
-    <!-- Navbar -->
+    <%# Navbar %>
     <%= render 'shared/navbar' %>
-    <!-- /navbar -->
+    <%# /navbar %>
 
-    <div class="bg-parallax parallax-overlay accounts-page"  data-jarallax='{"speed": 0.2}' style='background-image: url("images/bg6.jpg")'>
+    <div class="bg-parallax parallax-overlay accounts-page"  data-jarallax='{"speed": 0.2}' style='background-image: url(<%= asset_path 'landscape.jpg' %>)'>
         <div class="container">
             <div class="row pb30">
                 <div class="col-lg-4 col-md-6 mr-auto ml-auto col-sm-8">
@@ -37,13 +37,13 @@
         </div>
     </div>
 
-    <!-- Footer -->
+    <%# Footer %>
     <%= render 'shared/footer' %>
-    <!--/footer-->
+    <%# /footer%>
 
-    <!-- Footer bottom -->
+    <%# Footer bottom %>
     <%= render 'shared/footer_bottom' %>
-    <!--/footer bottom-->
+    <%# /footer bottom%>
 
-    <!--back to top-->
+    <%# back to top%>
     <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="ti-angle-up"></i></a>
