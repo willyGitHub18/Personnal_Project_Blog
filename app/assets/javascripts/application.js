@@ -19,6 +19,7 @@
 //= require js/assan.custom
 //= require cubeportfolio/js/jquery.cubeportfolio.min
 //= require turbolinks
+//= require trix 
 //= require_tree .
 
     //projects
