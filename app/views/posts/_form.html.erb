@@ -11,8 +11,8 @@
         <%= f.text_field :title, class: "form-control", placeholder: "Saisir le titre de l'article" %><br />
     </div>
     <div class="form-group">
-        <%= f.text_area :content, class: "form-control", id: "exampleTextarea", rows: "10", placeholder: "Contenu de l'article" %><br />
-        <trix-editor input="exampleTextarea"></trix-editor>
+        <%= f.hidden_field :content, class: "form-control", id: "exampleTextarea", rows: "10", placeholder: "Contenu de l'article" %>
+        <trix-editor class="form-control" input="exampleTextarea"></trix-editor><br />
     </div>
     <div class="form-group">
         <%= f.submit "Poster", class: "btn btn-rounded btn-primary btn-block" %>
