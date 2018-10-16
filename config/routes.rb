@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   get 'posts/laos', to: 'posts#index_la', as: "laos"
   get 'posts/vietnam', to: 'posts#index_vi', as: "vietnam"
 
-  get    '/signup',  to: 'users#new'
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
@@ -17,4 +16,3 @@ Rails.application.routes.draw do
 
   resources :posts
 end
- 
