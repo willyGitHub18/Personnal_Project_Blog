@@ -1,6 +1,5 @@
 <article class="col-md-12 post-masonry mb40">
-    <a href="#"> <%= image_tag "entry3.jpg", alt: "", class: "img-fluid mb20" %></a>
-    <a href="#"><h4 class="masonry-title mb0"><%= @post.title %></h4></a>
+    <h4 class="masonry-title mb0"><%= @post.title %></h4>
     <ul class="post-meta list-inline">
         <li class="list-inline-item">
             <i class="fa fa-calendar-o"></i> <a href="#">29 June 2017</a>
@@ -9,25 +8,7 @@
             <i class="fa fa-tags"></i> <a href="#">Lieu</a>
         </li>
     </ul>
-    <p>
-        <%= sanitize @post.content %>
-    </p>
-    <p>
-        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus .
-    </p>
-    <p>
-        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus .
-    </p>
-    <p>
-        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus .
-    </p>
-    <p>
-        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus .
-    </p>
-    <p>
-        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus .
-    </p>
-    <p>
-        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus .
-    </p>
+
+    <%= sanitize @post.content %>
+    
 </article>

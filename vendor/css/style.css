@@ -1726,7 +1726,7 @@ Blog post entries
 
 .post-meta {
   padding-top: 15px;
-  margin-bottom: 20px; }
+  margin-bottom: 100px; }
   .post-meta li:not(:last-child) {
     margin-right: 10px; }
   .post-meta li a {
@@ -2430,7 +2430,7 @@ Page title styles
 
 .title-space-lg {
   padding-top: 14em;
-  padding-bottom: 7em; }
+  padding-bottom: 24em; }
 
 .page-title-sm-gray {
   padding: 30px 0;
