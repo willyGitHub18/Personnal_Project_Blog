@@ -1578,14 +1578,14 @@ Accounts style
 /*
 Blockquotes
 */
-.blockquote footer, .quote footer {
+.blockquote footer, .quotes footer {
   font-weight: 500;
   color: #999; }
 
-.quote {
+.quotes {
   position: relative;
   border: 0px !important; }
-  .quote:before {
+  .quotes:before {
     font-family: 'themify';
     speak: none;
     font-style: normal;
@@ -1600,15 +1600,15 @@ Blockquotes
     top: -10px;
     left: 0;
     color: #EEE; }
-  .quote p {
+  .quotes p {
     position: relative; }
-    .quote p:first-letter {
+    .quotes p:first-letter {
       padding-left: 40px; }
 
-.quote.blockquote-reverse:before {
+.quotes.blockquote-reverse:before {
   right: 0; }
 
-.quote.blockquote-reverse p:first-letter {
+.quotes.blockquote-reverse p:first-letter {
   padding-left: 0px; }
 
 /*
@@ -3779,7 +3779,7 @@ Assan Demos landing page style
   .page-demos .navbar.fixed-top.navbar-dark.bg-primary .navbar-nav {
     margin-right: 0px !important; }
 
-.page-demos .quote-most {
+.page-demos .quotes-most {
   font-weight: 400;
   font-size: 1.9rem;
   line-height: 1.8; }
