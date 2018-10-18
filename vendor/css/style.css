@@ -1724,9 +1724,9 @@ Blog post entries
 .post-content .post-title {
   font-weight: 500; }
 
-.post-meta {
+  .post-meta {
   padding-top: 15px;
-  margin-bottom: 100px; }
+  margin-bottom: 40px; }
   .post-meta li:not(:last-child) {
     margin-right: 10px; }
   .post-meta li a {
