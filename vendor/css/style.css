@@ -59,7 +59,7 @@ a {
   a:hover, a:focus {
     text-decoration: none;
     outline: 0 !important;
-    color: #666; }
+    color: #4395B8; }
 
 /**typography**/
 h1,
@@ -702,9 +702,9 @@ Buttons
       background-color: #f0ad4e; }
 
 .btn-outline-secondary {
-  border: 2px solid #A8C3DC;
+  border: 2px solid #2e4245;
   background-color: transparent;
-  color: #A8C3DC; }
+  color: #2e4245; }
   .btn-outline-secondary:hover, .btn-outline-secondary:focus, .btn-outline-secondary:active {
     color: #fefefe;
     border-color: #A8C3DC;
@@ -1752,7 +1752,8 @@ Blog post entries
     margin-right: 0px; }
 
 .post-content .fa {
-  color: #ddd; }
+  color: #4395B8;
+}
 
 .post-content a h2 {
   font-size: 1.5rem;
