@@ -26,15 +26,20 @@
         <%# Article post %>
         <%= render 'article_post' %>
         <%#article post%>
+        <% if logged_in? %>
+            <% if current_user.admin? && !current_user?(@user) %>
+                <%= link_to "Modifier", edit_post_path, class: "col-md-12 post-masonry mb40" %><%= link_to "Supprimer", @post, method: :delete, data: { confirm: "Vous êtes sûr?" } %>
+            <% end %>
+        <% end %>
     </div>
 
     <%# Footer %>
     <%= render 'shared/footer' %>
-  <%#/footer%>
+    <%#/footer%>
 
     <%# Footer bottom %>
     <%= render 'shared/footer_bottom' %>
-  <%#/footer bottom%>
+    <%#/footer bottom%>
 
     <%#back to top%>
     <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="ti-angle-up"></i></a>
