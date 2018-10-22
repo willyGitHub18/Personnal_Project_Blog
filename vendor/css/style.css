@@ -1473,7 +1473,8 @@ Alert & notifications
 */
 .alert {
   border-radius: 0px;
-  border: 0px; }
+  border: 0px;
+  z-index: 100; }
   .alert.alert-warning {
     background-color: #f0ad4e;
     color: #fff; }
