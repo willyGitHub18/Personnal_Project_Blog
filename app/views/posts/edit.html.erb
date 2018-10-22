@@ -1,3 +1,56 @@
-<h1>Modifier un article</h1>
-<%= render 'form' %>
-<%= link_to "Retour", root_path %>
+    <%# Preloader %>
+    <div id="preloader">
+        <div id="preloader-inner"></div>
+    </div>
+    <%#/preloader%>
+
+    <%# Site Overlay %>
+    <div class="site-overlay"></div>
+
+    <%# Navbar %>
+    <%= render 'shared/navbar' %>
+    <%# /navbar %>
+
+    <div class="bg-parallax parallax-overlay accounts-page"  data-jarallax='{"speed": 0.2}' style="background-image:url(<%= asset_path 'landscape.jpg' %>)">
+        <div class="container">
+            <div class="row pb30 align-items-end">
+                <div class="col-lg-6 ml-md-auto mr-auto col-md-8 col-sm-8 mb20">
+                    <h3 class="text-white text-left mb30">Laisser parler la plume</h3>
+
+                    <%= form_for @post do |f| %>
+
+                        <%= render 'shared/error_messages' %>
+
+                        <div class="form-group">
+                            <%= f.collection_select(:category_id, Category.all, :id, :name, { prompt: "Choisir une catégorie" }, class: "form-control" ) %><br />
+                        </div>
+                        <div class="form-group">
+                            <%= f.text_field :title, class: "form-control", placeholder: "Saisir le titre de l'article" %><br />
+                        </div>
+                        <div class="form-group">
+                            <%= f.hidden_field :content, class: "form-control", id: "exampleTextarea", rows: "10", placeholder: "Contenu de l'article" %>
+                            <trix-editor class="trix_body" input="exampleTextarea" placeholder="Contenu de l'article"></trix-editor><br />
+                        </div>
+                        <div class="form-group">
+                            <%= f.submit "Modifier", class: "btn btn-rounded btn-primary btn-block" %>
+                        </div>
+                        <div class="action">
+                            <%= link_to "Retour", :back %>
+                        </div>
+
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%# Footer %>
+    <%= render 'shared/footer' %>
+    <%# /footer %>
+
+    <%# Footer bottom %>
+    <%= render 'shared/footer_bottom' %>
+    <%# /footer bottom %>
+
+    <%#back to top%>
+    <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="ti-angle-up"></i></a>
