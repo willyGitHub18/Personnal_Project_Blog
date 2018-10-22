@@ -3,6 +3,11 @@
       <li>
           <%= link_to post.title, post %>
           <%= truncate(sanitize(strip_tags(post.content)), length: 50, separator: ' ') %>
+          <% if logged_in? %>
+              <% if current_user.admin? && !current_user?(@user) %>
+                  <%= link_to "delete", post, method: :delete, data: { confirm: "You sure?" } %>
+              <% end %>
+          <% end %>
       </li>
   <% end %>
 </ul>
