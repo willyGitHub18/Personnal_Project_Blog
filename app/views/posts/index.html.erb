@@ -1,3 +1,8 @@
-<% @posts.each do |post| %>
-    <%= post.title %>
-<% end %>
+<ul class="admin-index">
+  <% @posts.each do |post| %>
+      <li>
+          <%= link_to post.title, post %>
+          <%= truncate(sanitize(strip_tags(post.content)), length: 50, separator: ' ') %>
+      </li>
+  <% end %>
+</ul>
