@@ -1744,8 +1744,32 @@ Blog post entries
   .post-meta li:last-child:after {
     display: none; }
 
+  .post-meta-article {
+  padding-top: 15px;
+  margin-bottom: 40px;
+  text-align: center; }
+  .post-meta-article li:not(:last-child) {
+    margin-right: 10px; }
+  .post-meta-article li a {
+    color: #999;
+    font-size: 13px; }
+    .post-meta-article li a:hover {
+      color: #4782d3; }
+  .post-meta-article li i {
+    margin-right: 5px; }
+  .post-meta-article li:after {
+    margin-top: -5px;
+    content: "/";
+    margin-left: 10px; }
+  .post-meta-article li:last-child:after {
+    display: none; }
+
 .post-masonry .masonry-title {
   font-weight: 500; }
+
+.masonry-title-article {
+  font-weight: 500;
+  text-align: center; }
 
 .share-buttons li {
   vertical-align: middle; }
