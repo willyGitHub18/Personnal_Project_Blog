@@ -15,6 +15,7 @@
 //= require jquery3
 //= require popper
 //= require bootstrap
+//= require bootstrap-sprockets
 //= require js/plugins/plugins
 //= require js/assan.custom
 //= require cubeportfolio/js/jquery.cubeportfolio.min
