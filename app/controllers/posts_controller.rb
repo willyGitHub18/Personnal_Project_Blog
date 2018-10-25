@@ -22,6 +22,38 @@ class PostsController < ApplicationController
       @posts = Post.all
     end
 
+    def index_ca
+      @posts = Post.all
+    end
+
+    def index_phi
+      @posts = Post.all
+    end
+
+    def index_ja
+      @posts = Post.all
+    end
+
+    def index_us
+      @posts = Post.all
+    end
+
+    def index_pe
+      @posts = Post.all
+    end
+
+    def index_bo
+      @posts = Post.all
+    end
+
+    def index_arg
+      @posts = Post.all
+    end
+
+    def index_chi
+      @posts = Post.all
+    end
+
     # The method is not really empty cause we will use the private method find_post
     def show
     end
