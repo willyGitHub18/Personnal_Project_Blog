@@ -12,13 +12,15 @@
             <% end %>
         </div><%#/col%>
         <div class="col-lg-3 mb40">
-            <div class="icon-box icon-box-center">
-                <%= image_tag 'thai.svg', class: "icon-hover-1 bg-danger icon-hover-default" %>
-                <h4>Thaïlande</h4>
-                <p>
-                    Molestiae, repudiandae, maxime, earum, sapiente assumenda non odit laborum qui vero vel quos sint excepturi in laudantium.
-                </p>
-            </div>
+            <%= link_to thailand_path, class: "text-intro" do %>
+                <div class="icon-box icon-box-center">
+                    <%= image_tag 'thai.svg', class: "icon-hover-1 bg-danger icon-hover-default" %>
+                    <h4>Thaïlande</h4>
+                    <p>
+                        Molestiae, repudiandae, maxime, earum, sapiente assumenda non odit laborum qui vero vel quos sint excepturi in laudantium.
+                    </p>
+                </div>
+            <% end %>
         </div><%#/col%>
         <div class="col-lg-3 mb40">
             <div class="icon-box icon-box-center">
