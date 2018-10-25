@@ -7487,6 +7487,7 @@ a.text-dark:hover {
 
 .fa-tags:before {
   content: "\f02c";
+  color: #4395B8;
 }
 
 .fa-book:before {
@@ -8450,6 +8451,7 @@ a.text-dark:hover {
 
 .fa-calendar-o:before {
   content: "\f133";
+  color: #4395B8;
 }
 
 .fa-fire-extinguisher:before {
