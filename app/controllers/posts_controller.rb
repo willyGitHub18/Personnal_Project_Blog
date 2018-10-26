@@ -7,7 +7,7 @@ class PostsController < ApplicationController
     end
 
     def index_nz
-      @posts = Post.all
+      @posts = Post.all.order('created_at DESC')
     end
 
     def index_th
