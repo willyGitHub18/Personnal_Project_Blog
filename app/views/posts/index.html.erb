@@ -5,7 +5,7 @@
           <%= truncate(sanitize(strip_tags(post.content)), length: 50, separator: ' ') %>
           <% if logged_in? %>
               <% if current_user.admin? && !current_user?(@user) %>
-                  <%= link_to "delete", post, method: :delete, data: { confirm: "You sure?" } %>
+                  <%= link_to "Modifier", edit_post_path(post), class: "col-md-12 post-masonry mb40" %><%= link_to "Supprimer", post, method: :delete, data: { confirm: "Vous êtes sûr?" } %>
               <% end %>
           <% end %>
       </li>
