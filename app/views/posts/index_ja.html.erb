@@ -1,0 +1,79 @@
+    <%# Preloader %>
+    <div id="preloader">
+        <div id="preloader-inner"></div>
+    </div>
+    <%#/preloader%>
+
+    <%# Site Overlay %>
+    <div class="site-overlay"></div>
+
+    <%# Navbar %>
+    <%= render 'shared/navbar' %>
+    <%# /navbar %>
+
+    <%# Page title %>
+    <div class="page-titles-img title-space-lg bg-parallax parallax-overlay mb70" data-jarallax='{"speed": 0.2}' style='background-image: url(<%= asset_path 'indexes/japan-view.jpg' %>)'>
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-8 ml-auto mr-auto">
+                    <h1 class='text-uppercase'>Japon</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%#page title end%>
+
+    <div class="container mb30">
+        <div class="row">
+            <div class="col-md-10 ml-auto mr-auto">
+                <% @posts.each do |post| %>
+                    <% if post.category.name == "Japan" %>
+                        <article class="article-post mb70">
+                            <a class="post-thumb mb30" href="#">
+                                <%= image_tag "entry2.jpg", alt: "", class: "img-fluid" %>
+                                <div class="post-overlay">
+                                    <span>In Photography</span>
+                                </div>
+                            </a><%#thumb%>
+                            <div class="post-content text-center">
+                                <h2 class="post-title"><%= link_to post.title, post_path(post.id), class: "post-title" %></h2>
+                                <ul class="post-meta list-inline">
+                                    <li class="list-inline-item">
+                                        <i class="fa fa-calendar-o"></i> <a href="#">29 June 2017</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <i class="fa fa-tags"></i> <a href="#">Lieu</a>
+                                    </li>
+                                </ul>
+                                <p><%= truncate(sanitize(strip_tags(post.content)), length: 500, separator: ' ') %><p>
+
+                                <%= link_to "Plus de lecture", post_path(post.id), class: "btn btn-outline-secondary" %>
+                            </div>
+                        </article>
+                    <% end %>
+                <% end %>
+                <%#article%>
+
+                <nav aria-label="Page navigation example" class="mb70">
+                    <ul class="pagination pagination justify-content-end">
+                        <li class="page-item "><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <%# Footer %>
+    <%= render 'shared/footer' %>
+    <%# /footer %>
+
+    <%# Footer bottom %>
+    <%= render 'shared/footer_bottom' %>
+    <%# /footer bottom %>
+
+    <%#back to top%>
+    <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="ti-angle-up"></i></a>
