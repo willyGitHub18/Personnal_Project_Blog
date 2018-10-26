@@ -3,7 +3,7 @@ class PostsController < ApplicationController
     before_action :is_admin?, only: [:new, :create, :index, :edit, :update, :destroy]
 
     def index
-      @posts = Post.all
+      @posts = Post.all.order('created_at DESC')
     end
 
     def index_nz
@@ -11,47 +11,47 @@ class PostsController < ApplicationController
     end
 
     def index_th
-      @posts = Post.all
+      @posts = Post.all.order('created_at DESC')
     end
 
     def index_la
-      @posts = Post.all
+      @posts = Post.all.order('created_at DESC')
     end
 
     def index_vi
-      @posts = Post.all
+      @posts = Post.all.order('created_at DESC')
     end
 
     def index_ca
-      @posts = Post.all
+      @posts = Post.all.order('created_at DESC')
     end
 
     def index_phi
-      @posts = Post.all
+      @posts = Post.all.order('created_at DESC')
     end
 
     def index_ja
-      @posts = Post.all
+      @posts = Post.all.order('created_at DESC')
     end
 
     def index_us
-      @posts = Post.all
+      @posts = Post.all.order('created_at DESC')
     end
 
     def index_pe
-      @posts = Post.all
+      @posts = Post.all.order('created_at DESC')
     end
 
     def index_bo
-      @posts = Post.all
+      @posts = Post.all.order('created_at DESC')
     end
 
     def index_arg
-      @posts = Post.all
+      @posts = Post.all.order('created_at DESC')
     end
 
     def index_chi
-      @posts = Post.all
+      @posts = Post.all.order('created_at DESC')
     end
 
     # The method is not really empty cause we will use the private method find_post
