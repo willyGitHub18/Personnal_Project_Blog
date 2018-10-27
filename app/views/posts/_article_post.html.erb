@@ -2,10 +2,10 @@
     <h2 class="masonry-title-article mb0"><%= @post.title %></h2>
     <ul class="post-meta-article list-inline">
         <li class="list-inline-item">
-            <i class="fa fa-calendar-o"></i> <a href="#">29 June 2017</a>
+            <i class="fa fa-calendar-o"></i> <a href="#"><%= @post.date.strftime("%e %b %Y") %></a>
         </li>
         <li class="list-inline-item">
-            <i class="fa fa-tags"></i> <a href="#">Lieu</a>
+            <i class="fa fa-tags"></i> <a href="#"><%= @post.place %></a>
         </li>
     </ul>
 
