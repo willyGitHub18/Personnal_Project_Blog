@@ -10,6 +10,11 @@
     <div class="form-group">
         <%= f.text_field :title, class: "form-control", placeholder: "Saisir le titre de l'article" %><br />
     </div>
+    <div class="form-row">
+        <%= f.date_field :date, class: "form-control col-6" %>
+        <%= f.text_field :place, class: "form-control col-6", placeholder: "Lieu" %>
+    </div>
+    <br />
     <div class="form-group">
         <%= f.hidden_field :content, class: "form-control", id: "exampleTextarea", rows: "10", placeholder: "Contenu de l'article" %>
         <trix-editor class="trix_body" input="exampleTextarea" placeholder="Contenu de l'article"></trix-editor><br />
