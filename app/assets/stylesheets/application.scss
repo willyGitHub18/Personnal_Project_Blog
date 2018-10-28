@@ -35,7 +35,11 @@
 // Custom css for trix
 @import "components/_trix_editor";
 
-// Style for h2 titles on index pages
+// Style for h2 titles on index pages and incons date and place
 .post-title {
   color: #2E4245;
+}
+
+.font-size-icon {
+  font-size: 13px;
 }
