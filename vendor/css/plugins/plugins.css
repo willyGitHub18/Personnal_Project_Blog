@@ -7571,6 +7571,7 @@ a.text-dark:hover {
 
 .fa-map-marker:before {
   content: "\f041";
+  color: #4395b8;
 }
 
 .fa-adjust:before {
@@ -16291,6 +16292,7 @@ you can use the generic selector below, but it's slower:
 
 .icon-map-pin:before {
   content: "\e047";
+  color: #4395b8;
 }
 
 .icon-dial:before {

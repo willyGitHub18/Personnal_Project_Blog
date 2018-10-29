@@ -42,7 +42,7 @@
                                         <i class="fa fa-calendar-o"></i> <span class="font-size-icon"><%= post.date.strftime("%e %b %Y") %></span>
                                     </li>
                                     <li class="list-inline-item">
-                                        <i class="fa fa-tags"></i> <span class="font-size-icon"><%= post.place %></span>
+                                        <i class="fa fa-map-marker"></i> <span class="font-size-icon"><%= post.place %></span>
                                     </li>
                                 </ul>
                                 <p><%= truncate(sanitize(strip_tags(post.content)), length: 500, separator: ' ') %><p>
