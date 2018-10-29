@@ -12,11 +12,11 @@
     <%# /navbar %>
 
     <%# Page title %>
-    <div class="page-titles-img title-space-lg bg-parallax parallax-overlay mb70" data-jarallax='{"speed": 0.2}' style='background-image: url(<%= asset_path 'indexes/nz-hobbit.jpg' %>)'>
+    <div class="page-titles-img title-space-lg bg-parallax parallax-overlay mb70" data-jarallax='{"speed": 0.2}' style='background-image: url(<%= asset_path 'indexes/usa-view.jpg' %>)'>
         <div class="container">
             <div class="row">
                 <div class=" col-md-8 ml-auto mr-auto">
-                    <h1 class='text-uppercase'>Nouvelle-Zélande</h1>
+                    <h1 class='text-uppercase'>États-Unis</h1>
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@
         <div class="row">
             <div class="col-md-10 ml-auto mr-auto">
                 <% @posts.each do |post| %>
-                    <% if post.category.name == "New-Zealand" %>
+                    <% if post.category.name == "USA" %>
                         <article class="article-post mb70">
                             <%= link_to image_tag(post.image_url.to_s , alt: "", class: "img-fluid-index"), post_path(post.id), class: "post-thumb mb30" %>
                             <div class="post-content text-center">
