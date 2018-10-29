@@ -11,9 +11,9 @@
         <%= f.text_field :title, class: "form-control", placeholder: "Saisir le titre de l'article" %><br />
     </div>
     <div class="form-group">
-        <%= f.file_field :image %>
-        <%= f.check_box :remove_image %><label>Supprimer l'image</label><br />
-    </div>
+        <%= f.file_field :image, class: "file-upload-field" %>
+        <%= f.check_box :remove_image %> <label class="file-delete-field">Supprimer l'image</label>
+    </div><br />
     <div class="form-row">
         <%= f.date_field :date, class: "form-control col-6" %>
         <%= f.text_field :place, class: "form-control col-6", placeholder: "Lieu" %>
