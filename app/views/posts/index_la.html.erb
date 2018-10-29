@@ -29,12 +29,7 @@
                 <% @posts.each do |post| %>
                     <% if post.category.name == "Laos" %>
                         <article class="article-post mb70">
-                            <a class="post-thumb mb30" href="#">
-                                <%= image_tag post.image_url.to_s , alt: "", class: "img-fluid" %>
-                                <div class="post-overlay">
-                                    <span>In Photography</span>
-                                </div>
-                            </a><%#thumb%>
+                            <%= link_to image_tag(post.image_url.to_s , alt: "", class: "img-fluid-index"), post_path(post.id), class: "post-thumb mb30" %>
                             <div class="post-content text-center">
                                 <h2 class="post-title"><%= link_to post.title, post_path(post.id), class: "post-title" %></h2>
                                 <ul class="post-meta list-inline">
