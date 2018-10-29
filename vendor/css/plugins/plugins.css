@@ -598,6 +598,11 @@ mark {
   height: auto;
 }
 
+.img-fluid-index {
+  width: 900px;
+  height: 500px;
+}
+
 .img-thumbnail {
   padding: .25rem;
   background-color: #fff;
