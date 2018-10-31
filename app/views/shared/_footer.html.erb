@@ -33,7 +33,7 @@
                             <%= image_tag post.image_url.to_s , alt: "", class: "d-flex mr-3 img-fluid", width: "64" %>
                             <div class="media-body">
                                 <h5 class="mt-0 mb-1"><%= link_to post.title %></h5>
-                                <%= post.date %>
+                                <%= post.date.strftime("%e %b %Y") %>
                             </div>
                         </li>
                     <% end %>
