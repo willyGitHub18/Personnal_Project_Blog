@@ -31,7 +31,9 @@
                 <% @posts.each do |post| %>
                     <% if post.category.name == "Argentina" %>
                         <article class="article-post mb70">
-                            <%= link_to image_tag(post.image_url.to_s , alt: "", class: "img-fluid-index"), post_path(post.id), class: "post-thumb mb30" %>
+                            <% if post.image.attached? %>
+                                <%= link_to image_tag(post.image , alt: "", class: "img-fluid-index"), post_path(post.id), class: "post-thumb mb30" %>
+                            <% end %>
                             <div class="post-content text-center">
                                 <h2 class="post-title"><%= link_to post.title, post_path(post.id), class: "post-title" %></h2>
                                 <ul class="post-meta list-inline">
