@@ -1,7 +1,9 @@
 <ul class="admin-index">
   <% @posts.each do |post| %>
       <li>
-          <%= image_tag post.image_url.to_s , alt: "", class: "img-thumbnail-index" %>
+          <% if post.image.attached? %>
+              <%= image_tag post.image , alt: "", class: "img-thumbnail-index" %>
+          <% end %>
           <%= link_to post.title, post %>
           <%= truncate(sanitize(strip_tags(post.content)), length: 50, separator: ' ') %>
           <% if logged_in? %>

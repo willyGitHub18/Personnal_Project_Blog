@@ -29,13 +29,15 @@
                 <h3>Derniers articles</h3>
                 <ul class="list-unstyled latest-news">
                     <% latest_posts.each do |post| %>
-                        <li class="media my-3">
-                            <%= image_tag post.image_url.to_s , alt: "", class: "d-flex mr-3 img-fluid", width: "64" %>
-                            <div class="media-body">
-                                <h5 class="mt-0 mb-1"><%= link_to post.title, post_path(post.id) %></h5>
-                                <%= post.date.strftime("%e %b %Y") %>
-                            </div>
-                        </li>
+                        <% if post.image.attached? %>
+                            <li class="media my-3">
+                                <%= image_tag post.image , alt: "", class: "d-flex mr-3 img-fluid", width: "64" %>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1"><%= link_to post.title, post_path(post.id) %></h5>
+                                    <%= post.date.strftime("%e %b %Y") %>
+                                </div>
+                            </li>
+                        <% end %>
                     <% end %>
                 </ul>
             </div>
