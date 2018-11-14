@@ -35,11 +35,23 @@
 // Custom css for trix
 @import "components/_trix_editor";
 
-// Style for h2 titles on index pages and incons date and place
+// Style for h2 titles on index and home pages and incons date and place
 .post-title {
   color: #2E4245;
 }
 
 .font-size-icon {
   font-size: 13px;
+}
+
+// Style for video parallax
+#topanchor {
+  color: #fefefe;
+  background-color: transparent;
+  border: 2px solid #fefefe;
+}
+
+#topanchor:hover {
+  color: #141012;
+  background-color: #fefefe;
 }
