@@ -2674,6 +2674,8 @@ Progress bars
   background-color: #EAEAFA;
 }
   .progress.progress-default .progress-img {
+    display: flex;
+    justify-content: end;
     color: #fefefe;
   }
   .progress.progress-default .progress-bar {
