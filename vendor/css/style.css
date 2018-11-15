@@ -2670,46 +2670,101 @@ Progress bars
 .progress {
   margin-bottom: 10px;
   height: 15px;
-  border-radius: 100px; }
+  border-radius: 100px;
+  background-color: #EAEAFA; }
   .progress.progress-default .progress-bar {
-    background: #4782d3;
+    background: #4395b8;
     border-radius: 100px;
     line-height: 15px; }
-  .progress-bar-nz {
-    background-color: black;
+  .progress.progress-default .progress-bar-nz {
+    background-color: #4395b8;
+    border-radius: 100px;
+    line-height: 15px;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
   }
   .progress-bar-th {
-    background-color: black;
-  }
+    background-color: #4395B8;
+    border-radius: 100px;
+    line-height: 15px;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+  }  
   .progress-bar-la {
-    background-color: black;
-  }
+    background-color: #4395B8;
+    border-radius: 100px;
+    line-height: 15px;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+  }  
   .progress-bar-vi {
-    background-color: black;
-  }
+    background-color: #4395B8;
+    border-radius: 100px;
+    line-height: 15px;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+  }  
   .progress-bar-ca {
-    background-color: black;
-  }
+    background-color: #4395B8;
+    border-radius: 100px;
+    line-height: 15px;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+  }  
   .progress-bar-phi {
-    background-color: black;
-  }
+    background-color: #4395B8;
+    border-radius: 100px;
+    line-height: 15px;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+  }  
   .progress-bar-ja {
-    background-color: black;
-  }
+    background-color: #4395B8;
+    border-radius: 100px;
+    line-height: 15px;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+  }  
   .progress-bar-us {
-    background-color: black;
-  }
+    background-color: #4395B8;
+    border-radius: 100px;
+    line-height: 15px;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+  }  
   .progress-bar-pe {
-    background-color: black;
-  }
+    background-color: #4395B8;
+    border-radius: 100px;
+    line-height: 15px;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+  }  
   .progress-bar-bo {
-    background-color: black;
-  }
+    background-color: #4395B8;
+    border-radius: 100px;
+    line-height: 15px;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+  }  
   .progress-bar-chi {
-    background-color: black;
-  }
+    background-color: #4395B8;
+    border-radius: 100px;
+    line-height: 15px;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+  }  
   .progress-bar-arg {
-    background-color: black;
+    background-color: #4395B8;
+    border-radius: 100px;
+    line-height: 15px;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+  }  
+  @-webkit-keyframes animate-positive{
+    0% { width: 0; }
+  }
+  @keyframes animate-positive{
+    0% { width: 0; }
   }
 
 .progress-label {
