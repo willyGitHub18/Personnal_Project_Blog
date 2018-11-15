@@ -2671,11 +2671,16 @@ Progress bars
   margin-bottom: 10px;
   height: 15px;
   border-radius: 100px;
-  background-color: #EAEAFA; }
+  background-color: #EAEAFA;
+}
+  .progress.progress-default .progress-img {
+    color: #fefefe;
+  }
   .progress.progress-default .progress-bar {
     background: #4395b8;
     border-radius: 100px;
-    line-height: 15px; }
+    line-height: 15px; 
+  }
   .progress.progress-default .progress-bar-nz {
     background-color: #4395b8;
     border-radius: 100px;
