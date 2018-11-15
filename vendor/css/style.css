@@ -2675,6 +2675,42 @@ Progress bars
     background: #4782d3;
     border-radius: 100px;
     line-height: 15px; }
+  .progress-bar-nz {
+    background-color: black;
+  }
+  .progress-bar-th {
+    background-color: black;
+  }
+  .progress-bar-la {
+    background-color: black;
+  }
+  .progress-bar-vi {
+    background-color: black;
+  }
+  .progress-bar-ca {
+    background-color: black;
+  }
+  .progress-bar-phi {
+    background-color: black;
+  }
+  .progress-bar-ja {
+    background-color: black;
+  }
+  .progress-bar-us {
+    background-color: black;
+  }
+  .progress-bar-pe {
+    background-color: black;
+  }
+  .progress-bar-bo {
+    background-color: black;
+  }
+  .progress-bar-chi {
+    background-color: black;
+  }
+  .progress-bar-arg {
+    background-color: black;
+  }
 
 .progress-label {
   margin-bottom: 5px;
