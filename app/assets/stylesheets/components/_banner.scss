@@ -104,8 +104,12 @@ Progress bars
       0% { width: 0; }
     }
 
-    // Trip dates
+    // Trip dates and icons
     .trip-dates {
         display: flex;
         justify-content: space-between;
+    }
+
+    .trip-icons .fas{
+        padding-right: 10px;
     }
