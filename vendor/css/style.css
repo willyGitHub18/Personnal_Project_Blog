@@ -2676,6 +2676,7 @@ Progress bars
   .progress.progress-default .progress-img {
     display: flex;
     justify-content: end;
+    padding-top: 1px;
     color: #fefefe;
   }
   .progress.progress-default .progress-bar {
