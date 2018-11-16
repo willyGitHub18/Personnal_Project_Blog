@@ -103,3 +103,9 @@ Progress bars
     @keyframes animate-positive{
       0% { width: 0; }
     }
+
+    // Trip dates
+    .trip-dates {
+        display: flex;
+        justify-content: space-between;
+    }
