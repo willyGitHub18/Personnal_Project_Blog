@@ -11,10 +11,10 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="index.html">
+        <%= link_to root_path, class:"navbar-brand" do %>
             <%= image_tag "logo2.svg", class: 'logo logo-dark image-icon', alt: "" %>
             <%= image_tag "logo1.svg", class: 'logo logo-light hidden-md-down image-icon', alt: "" %>
-        </a>
+        <% end %>
         <div  id="navbarNavDropdown" class="navbar-collapse collapse">
             <ul class="navbar-nav ml-auto">
                 <% if logged_in? %>
