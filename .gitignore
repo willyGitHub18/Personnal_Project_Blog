@@ -33,6 +33,6 @@
 # Ignore environement variables
 .env
 
-# Ignore uploaded test images.
+# Ignore uploaded test images 
 /public/uploads
 /public/assets
