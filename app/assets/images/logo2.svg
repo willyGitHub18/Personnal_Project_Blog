@@ -15,7 +15,7 @@
    width="84"
    height="19"
    viewBox="0 0 84 19"
-   sodipodi:docname="logo1.svg"
+   sodipodi:docname="logo2.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata907">
@@ -918,27 +918,27 @@
     <g
        transform="matrix(0.14920998,0,0,0.13085443,74.079784,-5.0786236)"
        id="g6625"
-       style="fill:#ffffff;fill-opacity:1">
+       style="fill:#000000;fill-opacity:1">
       <g
          id="g6646"
          transform="matrix(0.89199662,0,0,0.7288947,-272.90373,-11.701639)"
-         style="fill:#ffffff;fill-opacity:1">
+         style="fill:#000000;fill-opacity:1">
         <g
            id="g6649"
            transform="translate(6.2147508,-7.7062825)"
-           style="fill:#ffffff;fill-opacity:1">
+           style="fill:#000000;fill-opacity:1">
           <path
              sodipodi:nodetypes="cccccssssscscscsssccccccc"
              inkscape:connector-curvature="0"
              id="path6622"
              d="m 217,175.21049 c 0,-0.56412 -2.251,-1.60258 -5.00221,-2.30769 -6.03456,-1.54662 -4.78517,-2.86548 2.73536,-2.88749 l 5.23316,-0.0153 2.65581,-5.25 c 1.4607,-2.8875 5.06828,-9.2136 8.01685,-14.05799 2.94857,-4.8444 5.36103,-9.14132 5.36103,-9.54871 0,-0.40739 -5.0625,-1.777 -11.25,-3.04357 -20.2478,-4.14469 -24.75,-5.30211 -24.75,-6.36267 0,-0.71686 6.8431,-0.83035 21.75,-0.36071 l 21.75,0.68522 5.89468,-8.16077 c 10.42723,-14.43577 15.31794,-18.76156 19.6553,-17.38494 4.89382,1.55324 1.02883,10.97223 -10.35887,25.24461 l -5.64163,7.07075 6.42868,20.33097 c 3.53578,11.18203 6.05497,20.70468 5.59822,21.16143 -0.45675,0.45675 -4.77183,-6.58564 -9.58907,-15.64975 l -8.75862,-16.4802 -11.38752,11.65316 -11.38752,11.65317 0.55923,4.76218 c 0.30758,2.6192 0.80568,5.5442 1.10688,6.5 0.58839,1.8671 -2.88911,-1.66053 -4.60577,-4.67217 z"
-             style="fill:#ffffff;fill-opacity:1;stroke:#d9ffff;stroke-opacity:1" />
+             style="fill:#000000;fill-opacity:1;stroke:#d9ffff;stroke-opacity:1" />
         </g>
       </g>
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:61.02956009px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.52573895;"
+       style="font-style:normal;font-weight:normal;font-size:61.02956009px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.52573895"
        x="-1.0866034"
        y="14.324917"
        id="text2351"
@@ -947,6 +947,6 @@
          id="tspan2349"
          x="-1.0866034"
          y="14.324917"
-         style="font-size:12.20591164px;stroke-width:1.52573895;fill:#ffffff;fill-opacity:1;">Wanderlust</tspan></text>
+         style="font-size:12.20591164px;stroke-width:1.52573895">Wanderlust</tspan></text>
   </g>
 </svg>
