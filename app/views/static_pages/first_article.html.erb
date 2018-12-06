@@ -1,12 +1,55 @@
-<p>
-    Bon, on doit l'avouer, on ne voulait pas créer un blog pour le voyage. Ce voyage on le voulait pour nous, à notre rythme, sans inconsciemment se forcer à raconter plus de choses dans le but de remplir les pages d'un blog. Mais ça c'était avant...
-</p>
-<p>
-    Quelques mois avant de partir nos familles, amis, collègues ont commencé à nous poser les mêmes questions : "Vous partez où ?, Quand ?, Comment vous allez faire pour vous déplacer ?, Vous nous donnerez des nouvelles, vous nous enverrez des photos ?". 
-</p>
-<p>
-    Finalement l'envie de pouvoir partager notre voyage à commencé à faire son chemin et cette avanture au quatres coins du monde c'est aussi la leur. Chacun à leur manière nous ont accompagné dans les préparatifs et jusqu'au départ. Et puis c'est quand même rassurant de pouvoir dès que possible partager nos vies et garder ce lien intime tout en étant à l'autre bout du monde.
-</p>
-<p>
-    Puis après la formation de Willy dans le développement web, créer un blog est devenu un défi. Le défi de pouvoir créer notre carnet de voyage digital. Voilà comment est né <strong>Wanderlust</strong>.
-</p><br>
+    <%# Preloader %>
+    <div id="preloader">
+        <div id="preloader-inner"></div>
+    </div>
+     <%#/preloader%>
+
+    <%# Site Overlay %>
+    <div class="site-overlay"></div>
+
+    <%# Navbar %>
+    <%= render 'shared/navbar' %>
+    <%# /navbar %>
+
+    <div class="page-titles-img title-space-lg bg-parallax parallax-overlay mb40" data-jarallax='{"speed": 0.2}' style='background-image: url(<%= asset_path 'pass.png' %>)'>
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-8 ml-auto mr-auto">
+                    <h1 class='text-uppercase'>Alors finalement pourquoi ce blog?</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%#page title end%>
+
+    <div class="container mb40">
+        <%# Article post %>
+        <div class='row'>
+            <div class='col-lg-10 ml-auto mr-auto'>
+                <p class='lead tritary-font mb50 text-center'>
+                    Comme on le disait plus tôt, on ne voulait pas créer un blog. On voyait ça plus comme une contrainte et nous voulions vivre ce voyage à notre rythme, sans inconsciemment se forcer à raconter plus de choses dans le but de remplir les pages d'un blog. Mais ça c'était avant...
+                </p>
+                <p class='lead tritary-font mb50 text-center'>
+                    Quelques mois avant de partir nos familles, amis, collègues ont commencé à nous poser les mêmes questions : "Vous partez où ?, Quand ?, Comment vous allez faire pour vous déplacer ?, Vous nous donnerez des nouvelles, vous nous enverrez des photos ?". 
+                </p>
+                <p class='lead tritary-font mb50 text-center'>
+                    Finalement l'envie de pouvoir partager notre voyage à commencé à faire son chemin et cette avanture au quatres coins du monde c'est aussi la leur. Chacun à leur manière nous ont accompagné dans les préparatifs et jusqu'au départ. Et puis c'est quand même rassurant de pouvoir dès que possible partager nos vies et garder ce lien intime tout en étant à l'autre bout du monde.
+                </p>
+                <p class='lead tritary-font mb50 text-center'>
+                     Puis après la formation de Willy dans le développement web, créer un blog est devenu un défi. Le défi de pouvoir créer notre carnet de voyage digital. Voilà comment est né <strong>Wanderlust</strong>.
+                </p>
+            </div>
+        </div>
+        <%#article post%>
+    </div>
+
+    <%# Footer %>
+    <%= render 'shared/footer' %>
+    <%#/footer%>
+
+    <%# Footer bottom %>
+    <%= render 'shared/footer_bottom' %>
+    <%#/footer bottom%>
+
+    <%#back to top%>
+    <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="ti-angle-up"></i></a>
