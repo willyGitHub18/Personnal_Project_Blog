@@ -1948,6 +1948,18 @@ Hero templates
     font-size: 3rem;
     line-height: 3rem; } }
 
+.half-screen {
+  width: 100%;
+  height: 80%; }
+  .half-screen .d-flex {
+    height: 100%;
+    position: relative; }
+
+@media (min-width: 992px) {
+  .hero-text-style1 h1 {
+    font-size: 3rem;
+    line-height: 3rem; } }
+
 /**particle hero**/
 .particle-bg {
   position: relative;
