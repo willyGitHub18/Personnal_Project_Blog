@@ -54,8 +54,12 @@ class PostsController < ApplicationController
       @posts = Post.all.order('created_at DESC')
     end
 
-    # The method is not really empty cause we will use the private method find_post
+    # The method is not really empty cause we will use the private method find_post 
+    # If the request path is different from the post path indicated by the post :id param it will redirect to the latest slug
     def show
+      if request.path != post_path(@post)
+        redirect_to @post, status: :moved_permanently
+      end
     end
 
     def new
@@ -94,10 +98,10 @@ class PostsController < ApplicationController
 private
 
     def post_params
-      params.require(:post).permit(:title, :content, :category_id, :date, :place, :image)
+      params.require(:post).permit(:title, :content, :category_id, :date, :place, :image, :slug)
     end
 
     def find_post
-      @post = Post.find(params[:id])
+      @post = Post.friendly.find(params[:id])
     end
 end
