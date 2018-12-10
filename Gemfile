@@ -80,3 +80,5 @@ gem "shrine", "~> 2.0"
 gem 'carrierwave', '~> 1.0'
 
 gem "aws-sdk-s3", require: false
+
+gem 'friendly_id', '~> 5.2.4'
