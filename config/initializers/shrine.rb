@@ -16,7 +16,7 @@ else
   s3_options = {
     access_key_id:     Rails.application.secrets.s3_access_key_id,
     secret_access_key: Rails.application.secrets.s3_secret_access_key,
-    region:            Rails.application.secrets.s3_region,
+    region:            ENV['AWS_REGION'],
     bucket:            Rails.application.secrets.s3_bucket
   }
   Shrine.storages = {
