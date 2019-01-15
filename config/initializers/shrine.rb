@@ -14,10 +14,10 @@ elsif Rails.env.test?
 else
   require "shrine/storage/s3"
   s3_options = {
-    access_key_id:     Rails.application.secrets.s3_access_key_id,
-    secret_access_key: Rails.application.secrets.s3_secret_access_key,
+    access_key_id:     ENV['AWS_KEY'],
+    secret_access_key: ENV['AWS_SECRET'],
     region:            ENV['AWS_REGION'],
-    bucket:            Rails.application.secrets.s3_bucket
+    bucket:            ENV['AWS_BUCKET']
   }
   Shrine.storages = {
     cache: Shrine::Storage::S3.new(prefix: "cache", upload_options: { acl: "public-read" }, **s3_options),
