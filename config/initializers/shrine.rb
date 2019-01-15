@@ -26,4 +26,4 @@ else
 end
 
 Shrine.plugin :activerecord # or :sequel 
-Shrine.plugin :cached_attachment_data # for retaining the cached file across form redisplay
+Shrine.plugin :cached_attachment_data # for retaining the cached file across form redisplays
