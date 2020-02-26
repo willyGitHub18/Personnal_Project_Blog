@@ -1,24 +1,4 @@
-# README
+# Blog Project (Rails)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I've created a [Blog](https://wanderlust-blog2018.herokuapp.com/) from scratch so family and friends to follow our trip around the world
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
