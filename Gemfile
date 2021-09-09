@@ -76,7 +76,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'trix'
-gem "shrine", "~> 2.0"
+gem "shrine", "~> 3.3"
 gem 'carrierwave', '~> 1.3'
 
 gem "aws-sdk-s3", require: false
